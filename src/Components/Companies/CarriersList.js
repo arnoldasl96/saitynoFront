@@ -10,7 +10,7 @@ import Spinner from 'react-bootstrap/Spinner'
 
     async componentDidMount(){
         document.body.className = 'carrierspage';
-        const url = "api/carriers"
+        const url = "https://api-for-flights.herokuapp.com/api/carriers"
         const response = await fetch(url);
         const data = await response.json();
         this.setState({Carriers: data, loading: false})

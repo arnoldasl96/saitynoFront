@@ -11,7 +11,7 @@ export default class PlacesList extends Component {
 
     async componentDidMount(){
         document.body.className = 'PlacesPage';
-        const url = "api/places"
+        const url = "https://api-for-flights.herokuapp.com/api/places"
         const response = await fetch(url);
         const data = await response.json();
         this.setState({Places: data, loading: false})

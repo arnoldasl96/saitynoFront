@@ -9,7 +9,7 @@ export default class PlanesList extends Component {
 
     async componentDidMount(){
         document.body.className = 'PlanesPage';
-        const url = "api/Planes"
+        const url = "https://api-for-flights.herokuapp.com/api/Planes"
         const response = await fetch(url);
         const data = await response.json();
         this.setState({Planes: data, loading: false})

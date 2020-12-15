@@ -50,6 +50,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://api-for-flights.herokuapp.com/",
-  "devDependencies": {}
+  "proxy": "https://api-for-flights.herokuapp.com/"
 }
